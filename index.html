@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.main, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;font-family: Arial, Helvetica, sans-serif;}
+        .main{display: flex;justify-content: center;align-items: center;height: 100vh;background: #1D4350;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+        .frm{width: 500px;padding: 20px;background-color: white;border-radius: 5px;display: flex;justify-content: space-between;}
+        .tbl{width: 100%;}
+        .txt{width: 100%;padding: 6px;background-color:white; border: 2px solid black;border: 1px solid black;}
+        .tdd{display: flex;justify-content: space-between;margin-top: 10px;}
+        .trr{display: flex;justify-content: space-between;width: 100%;}
+        .tx{display: flex;justify-content: space-between;width: 100%;flex-direction: column;padding: 8px;font-size: 18px;}
+        h2{margin-bottom: 20px;font-weight: 700;word-spacing: 5px;position: relative;}
+        .btn{width: 100%;padding: 10px;background: #1D4350;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */margin-top: 20px;border: none;outline: none;}
+h2::before{
+    content:'';
+    position: absolute;
+    width: 6%;
+    height: 2px;
+    background-color: black;
+    bottom: 1px;
+}
+
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form class="frm">
+            <table class="tbl">
+                <tr>
+                    <td><h2>Registration</h2></td>
+                </tr>
+                <tr class="trr">
+                    <td class="tx">
+                        <div>FullName</div>
+                        <div><input type="text" class="txt" placeholder="FullName"></div>
+                    </td>
+        
+                    <td class="tx">
+                        <div>Username</div>
+                        <div><input type="text" class="txt" placeholder="Username"></div>
+                    </td>
+                    </tr>
+                    <tr class="trr">
+                    <td class="tx">
+                        <div>Email</div>
+                        <div><input type="text" class="txt" placeholder="Enter your email"></div>
+                    </td>
+                
+                    <td class="tx">
+                        <div>Phone number</div>
+                        <div><input type="text" class="txt" placeholder="Enter your number"></div>
+                    </td>
+                    </tr>
+                    <tr class="trr">
+                        <td class="tx">
+                    <div>Password</div>
+                    <div><input type="text" class="txt" placeholder="Enter your password"></div>
+                </td>
+                <td class="tx">
+                    <div>Conform password</div>
+                    <div><input type="text" class="txt" placeholder="Conform your password"></div></td>
+                </tr>
+            
+                <tr>
+                    <td><h3>Gender</h3></td>
+                </tr>
+                <tr>
+                <td class="tdd">
+                    <span><input type="radio">male </span>
+                    <span><input type="radio">Female</span>
+                    <span><input type="radio">prefer not to say</span></td>
+               </tr>
+                <tr>
+                <td><a href="#"><input type="button" class="btn" value="Register"></a></td>
+                </tr>
+               </table>
+            </form>
+    </div>
+    
+</body>
+</html>
